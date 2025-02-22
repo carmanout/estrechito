@@ -1,1 +1,83 @@
-<h2>en construcción</h2>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Estrechito - Bar de Comida para Llevar</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">El Estrechito</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Carta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Acerca de</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="jumbotron text-center">
+        <h1 class="display-4">Bienvenido a El Estrechito</h1>
+        <p class="lead">¡Tu bar de comida para llevar favorito con la mejor comida de Caños!</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Cómo llegar</a>
+    </header>
+
+    <section class="container my-5">
+        <div class="row d-flex">
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <img src="https://media.gettyimages.com/id/1081422898/es/foto/pan-frito-pato.jpg?s=612x612&w=gi&k=20&c=rdR8XfXJvwxicyWYJLunr25Pc9S3CT6WzwAuZZr1kvE=" class="card-img-top" alt="Comida Deliciosa">
+                    <div class="card-body">
+                        <h5 class="card-title">Comida Deliciosa</h5>
+                        <p class="card-text">Disfruta de nuestra amplia variedad de platos deliciosos hechos con ingredientes frescos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <img src="https://media.gettyimages.com/id/1191193118/es/foto/camarero-trabajando-en-el-caf%C3%A9.jpg?s=612x612&w=gi&k=20&c=NsiFSKI3EI0HvuZ1AeQ1uFQ-kH41dg3kTY5vrG3vuq0=" class="card-img-top" alt="Servicio Rápido">
+                    <div class="card-body">
+                        <h5 class="card-title">Servicio Rápido</h5>
+                        <p class="card-text">Servicio rápido y eficiente para llevarte tu comida lo más rápido posible.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1481833761820-0509d3217039?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJhcnxlbnwwfHwwfHx8MA%3D%3D" class="card-img-top" alt="Gran Ambiente">
+                    <div class="card-body">
+                        <h5 class="card-title">Gran Ambiente</h5>
+                        <p class="card-text">Un ambiente acogedor y agradable para que disfrutes tu comida.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-light text-center py-4">
+        <p>&copy; <span id="currentYear"></span> El Estrechito. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

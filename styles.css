@@ -1,0 +1,64 @@
+body {
+    background-color: #60A7D2;
+    color: #FFFFFF;
+}
+
+.navbar {
+    background-color: #1E3C56;
+}
+
+.navbar-brand, .nav-link {
+    color: #FFFFFF !important;
+}
+
+.jumbotron {
+    background-color: #60A7D2;
+    color: #FFFFFF;
+    border: 2px solid #1E3C56;
+    text-shadow: 0px 0px 10px #000000; /* Añade sombra al texto */
+}
+
+.btn-primary {
+    background-color: #1E3C56;
+    border-color: #1E3C56;
+}
+
+.card {
+    background-color: #E9D7B7;
+    color: #2B2B2B;
+}
+
+.card-title {
+    color: #1E3C56;
+}
+
+footer {
+    background-color: #1E3C56;
+    color: #FFFFFF;
+}
+
+.bg-light {
+    background-color: #FFFFFF !important;
+    color: #2B2B2B !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #2B2B2B !important;
+}
+
+.navbar-light .navbar-brand {
+    color: #2B2B2B !important;
+}
+
+header{
+    background-image: url("https://www.shutterstock.com/image-photo/blue-party-glowing-light-black-260nw-1916852150.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+h1, h2, h3, h4, h5, h6, .navbar-brand, .nav-link {
+    font-family: 'Roboto', sans-serif;
+}
