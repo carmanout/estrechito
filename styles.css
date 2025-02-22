@@ -1,5 +1,5 @@
 body {
-    background-color: #60A7D2;
+    background: linear-gradient(135deg, #60A7D2, #1E3C56);
     color: #FFFFFF;
 }
 
@@ -12,10 +12,10 @@ body {
 }
 
 .jumbotron {
-    background-color: #60A7D2;
+    /* background: linear-gradient(135deg, #60A7D2, #1E3C56); */
     color: #FFFFFF;
     border: 2px solid #1E3C56;
-    text-shadow: 0px 0px 10px #000000; /* Añade sombra al texto */
+    text-shadow: 4px 4px 8px #000000; /* Sombra más agresiva */
 }
 
 .btn-primary {
@@ -24,7 +24,7 @@ body {
 }
 
 .card {
-    background-color: #E9D7B7;
+    background: linear-gradient(135deg, #E9D7B7, #60A7D2);
     color: #2B2B2B;
     margin-bottom: 15px;
 }
@@ -51,7 +51,7 @@ footer {
     color: #2B2B2B !important;
 }
 
-header{
+header {
     background-image: url("https://www.shutterstock.com/image-photo/blue-party-glowing-light-black-260nw-1916852150.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -62,4 +62,11 @@ header{
 
 h1, h2, h3, h4, h5, h6, .navbar-brand, .nav-link {
     font-family: 'Roboto', sans-serif;
+}
+
+.presentacion {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
