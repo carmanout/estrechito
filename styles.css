@@ -70,3 +70,40 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .nav-link {
     flex-direction: column;
     text-align: center;
 }
+
+
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.scrolling-wrapper::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
+.scrolling-wrapper .col-12 {
+    display: inline-block;
+    float: none;
+}
+
+.scrolling-wrapper .card {
+    cursor: grab;
+}
+
+.scrolling-wrapper .card:active {
+    cursor: grabbing;
+}
+
+#acerca-de-contacto .col-12 {
+    margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+    #acerca-de-contacto .col-12 {
+        margin-bottom: 0;
+    }
+}
