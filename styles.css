@@ -26,6 +26,7 @@ body {
 .card {
     background-color: #E9D7B7;
     color: #2B2B2B;
+    margin-bottom: 15px;
 }
 
 .card-title {
