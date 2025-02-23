@@ -69,7 +69,7 @@
                     <a class="nav-link" href="#carta">Carta</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#acerca-de">Acerca de</a>
+                    <a class="nav-link" href="#acercade">Acerca de</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contacto">Contacto</a>
@@ -79,20 +79,22 @@
     </nav>
 
     <header id="inicio" class="jumbotron text-center">
-        <h1 class="display-4">Bienvenido a El Estrechito</h1>
-        <p class="lead">¡Tu bar de comida para llevar favorito con la mejor comida de Caños!</p>
+
+        <h1 class="display-4">El Estrechito</h1>
+        <p class="">¡Tu bar de comida para llevar favorito con la mejor comida de Caños!</p>
         <a class="btn btn-primary btn-lg" href="#" role="button">Cómo llegar</a>
     </header>
 
-    <section class="container my-5">
-        <div class="presentacion">
-            <h5>En nuestro rincón acogedor, te invitamos a empezar el día con un buen desayuno, compartir unas tapas con
-                amigos o disfrutar del mejor pescadito frito al estilo tradicional. Nos encanta la buena comida, el
-                ambiente cercano y los momentos que se saborean sin prisa.</h5>
+    <section class="presentacion container">
+        <br>
+        <h5>En nuestro rincón acogedor, te invitamos a empezar el día con un buen desayuno, compartir unas tapas con
+            amigos o disfrutar del mejor pescadito frito al estilo tradicional. Nos encanta la buena comida, el
+            ambiente cercano y los momentos que se saborean sin prisa.</h5>
 
-            <h5>Pasa, siéntete como en casa y déjate llevar por el auténtico sabor de nuestra cocina. ¡Te esperamos con
-                los brazos abiertos y una mesa lista para ti!</h5>
-        </div>
+        <h5>Pasa, siéntete como en casa y déjate llevar por el auténtico sabor de nuestra cocina. ¡Te esperamos con
+            los brazos abiertos y una mesa lista para ti!</h5>
+        </section>
+    <section id="marketing" class="container">
         <br>
         <div class="row d-flex">
             <div class="col-md-4 d-flex align-items-stretch">
@@ -219,10 +221,12 @@
     <section id="acerca-de-contacto" class="container my-5">
         <div class="row">
             <div class="col-12 col-md-6 mb-3">
-                <section id="acerca-de">
+                <section id="acercade">
                     <h2 class="text-center">Acerca de Nosotros</h2>
-                    <p>El Estrechito es un bar de comida para llevar ubicado en Caños de Meca. Nos especializamos en ofrecer platos
-                        caseros, frescos y deliciosos preparados con ingredientes de calidad. Nuestro objetivo es brindar una
+                    <p>El Estrechito es un bar de comida para llevar ubicado en Caños de Meca. Nos especializamos en
+                        ofrecer platos
+                        caseros, frescos y deliciosos preparados con ingredientes de calidad. Nuestro objetivo es
+                        brindar una
                         experiencia gastronómica única en un ambiente acogedor y familiar.</p>
                 </section>
             </div>
@@ -238,7 +242,7 @@
         </div>
     </section>
 
-    <footer class="bg-light text-center py-4">
+    <footer>
         <p>&copy; <span id="currentYear"></span> El Estrechito. Todos los derechos reservados.</p>
     </footer>
 
@@ -248,68 +252,7 @@
     <script>
         document.getElementById('currentYear').textContent = new Date().getFullYear();
     </script>
-
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        // Selecciona el contenedor del carrusel
-        const slider = document.querySelector('.scrolling-wrapper');
-        let isDown = false; // Variable para saber si el ratón está presionado
-        let startX; // Coordenada X inicial cuando se presiona el ratón
-        let scrollLeft; // Posición de desplazamiento inicial
-
-        // Evento cuando se presiona el ratón
-        slider.addEventListener('mousedown', (e) => {
-            isDown = true; // Indica que el ratón está presionado
-            slider.classList.add('active'); // Añade una clase para indicar que está activo
-            startX = e.pageX - slider.offsetLeft; // Calcula la posición X inicial
-            scrollLeft = slider.scrollLeft; // Guarda la posición de desplazamiento inicial
-        });
-
-        // Evento cuando el ratón sale del contenedor
-        slider.addEventListener('mouseleave', () => {
-            isDown = false; // Indica que el ratón ya no está presionado
-            slider.classList.remove('active'); // Quita la clase activa
-        });
-
-        // Evento cuando se suelta el ratón
-        slider.addEventListener('mouseup', () => {
-            isDown = false; // Indica que el ratón ya no está presionado
-            slider.classList.remove('active'); // Quita la clase activa
-        });
-
-        // Evento cuando se mueve el ratón
-        slider.addEventListener('mousemove', (e) => {
-            if (!isDown) return; // Si el ratón no está presionado, no hace nada
-            e.preventDefault(); // Previene el comportamiento por defecto
-            const x = e.pageX - slider.offsetLeft; // Calcula la nueva posición X
-            const walk = (x - startX); // Calcula la distancia movida
-            slider.scrollLeft = scrollLeft - walk; // Desplaza el contenedor
-        });
-
-        // Scroll infinito
-        const items = document.querySelectorAll('.scrolling-wrapper .col-12'); // Selecciona todos los elementos del carrusel
-        const cloneFirst = items[0].cloneNode(true); // Clona el primer elemento
-        const cloneLast = items[items.length - 1].cloneNode(true); // Clona el último elemento
-        slider.appendChild(cloneFirst); // Añade el clon del primer elemento al final
-        slider.insertBefore(cloneLast, items[0]); // Añade el clon del último elemento al principio
-
-        // Evento cuando se desplaza el contenedor
-        slider.addEventListener('scroll', () => {
-            // Si se llega al final del contenedor, vuelve al principio
-            if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 1) {
-                slider.scrollLeft = 2;
-            // Si se llega al principio del contenedor, vuelve al final
-            } else if (slider.scrollLeft <= 0) {
-                slider.scrollLeft = slider.scrollWidth - slider.clientWidth - 4;
-            }
-        });
-
-        // Ajusta la posición inicial de desplazamiento al primer elemento real
-        slider.scrollLeft = items[0].offsetWidth;
-    });
-</script>
-
+    <script src="script.js"></script>
 
 </body>
 

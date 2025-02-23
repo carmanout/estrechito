@@ -1,10 +1,18 @@
-body {
-    background: linear-gradient(135deg, #60A7D2, #1E3C56);
-    color: #FFFFFF;
-}
 
+section{
+    /* background: rgb(187 187 187 / 38%); */
+    padding: 25px;
+    border-radius: 5px;
+    /* border: solid 2px #1E3C56; */
+    
+}
 .navbar {
     background-color: #1E3C56;
+    position: fixed;
+    position: fixed;
+    width: 100%;
+    border-bottom: solid 2px #1e3c56;
+    z-index: 20;
 }
 
 .navbar-brand, .nav-link {
@@ -12,10 +20,17 @@ body {
 }
 
 .jumbotron {
-    /* background: linear-gradient(135deg, #60A7D2, #1E3C56); */
+    background-image: url("img/video.gif");
+    text-shadow: 2px 2px 1px black;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
     color: #FFFFFF;
     border: 2px solid #1E3C56;
-    text-shadow: 4px 4px 8px #000000; /* Sombra más agresiva */
+    font-weight: 500;
+    margin-bottom: 0px !important;
 }
 
 .btn-primary {
@@ -24,18 +39,25 @@ body {
 }
 
 .card {
-    background: linear-gradient(135deg, #E9D7B7, #60A7D2);
-    color: #2B2B2B;
+    background: linear-gradient(90deg, #293246, #3b7294);
+    color: white;
     margin-bottom: 15px;
 }
 
 .card-title {
-    color: #1E3C56;
+    color: rgb(189, 225, 255);
+    font-weight: 500;
 }
 
 footer {
     background-color: #1E3C56;
     color: #FFFFFF;
+    margin: 0px;
+    padding: 15px;
+    text-align: center;
+}
+footer>p{
+    margin: 0px;
 }
 
 .bg-light {
@@ -52,7 +74,7 @@ footer {
 }
 
 header {
-    background-image: url("https://www.shutterstock.com/image-photo/blue-party-glowing-light-black-260nw-1916852150.jpg");
+    /* background-image: url("https://www.shutterstock.com/image-photo/blue-party-glowing-light-black-260nw-1916852150.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -61,7 +83,7 @@ header {
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 h1, h2, h3, h4, h5, h6, .navbar-brand, .nav-link {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Montserrat", serif !important;
 }
 
 .presentacion {
@@ -69,6 +91,8 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .nav-link {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    padding: 15px;
+    background: linear-gradient(180deg, #ffffff, #80c2eb);
 }
 
 
@@ -102,8 +126,45 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .nav-link {
     margin-bottom: 15px;
 }
 
+
+#marketing{
+    background: linear-gradient(180deg, #80c2eb, #fff);
+}
+
+#carta{
+    background: linear-gradient(180deg, #ffffff, #80c2eb);
+    margin-bottom: 0px !important;
+}
+
+#acerca-de-contacto{
+    background-color: rgb(37, 37, 37);
+    color: white;
+    margin-bottom: 0px !important;
+    margin-TOP: 0px !important;
+    border-bottom-right-radius: 0px ;
+    border-bottom-left-radius: 0px ;
+}
+
 @media (min-width: 768px) {
     #acerca-de-contacto .col-12 {
         margin-bottom: 0;
+    }
+    body {
+        background-image: url("img/wallpaper.jpg");
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+    section{
+        margin-top: 15px !important;
+        border: solid 2px #1E3C56;  
+    }
+
+    #acerca-de-contacto{
+        margin-TOP: 50px !important;
+    }
+
+    #acercade{
+        border: none;
     }
 }
