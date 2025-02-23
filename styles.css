@@ -157,7 +157,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .nav-link {
 
     section{
         margin-top: 15px !important;
-        border: solid 2px #1E3C56;  
+        border: solid 1px black;  
     }
 
     #acerca-de-contacto{
