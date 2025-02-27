@@ -73,4 +73,14 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     });
+
+    const logo = document.getElementById('logo');
+
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 0) {
+            logo.classList.add('shrink');
+        } else {
+            logo.classList.remove('shrink');
+        }
+    });
 });
