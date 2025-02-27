@@ -9,6 +9,7 @@ section{
     background-color: #1E3C56;
     position: fixed;
     width: 100%;
+    top: 0px;
     border-bottom: solid 2px #1e3c56;
     z-index: 20;
 }
@@ -18,18 +19,23 @@ section{
 }
 
 .jumbotron {
-    background-image: url("img/video.gif");
+    /* background-image: url("img/video.gif"); */
     /* background-image: url("img/2025/02/cartel.png"); */
     text-shadow: 2px 2px 1px black;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    padding-top: 150px;
+    background-position: top;
+    margin-top: 115px;
     color: #FFFFFF;
-    border: 2px solid #1E3C56;
+    /* border: 2px solid #1E3C56; */
     font-weight: 500;
     margin-bottom: 0px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .btn-primary {
@@ -152,9 +158,10 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .nav-link {
         margin-bottom: 0;
     }
     body {
-        background-image: url("img/wallpaper.jpg");
+        background-image: url("img/video.gif");
         background-attachment: fixed;
         background-position: center;
+        background-size: cover;
     }
 
     section{
