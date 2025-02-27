@@ -1,4 +1,3 @@
-
 section{
     /* background: rgb(187 187 187 / 38%); */
     padding: 25px;
@@ -8,7 +7,6 @@ section{
 }
 .navbar {
     background-color: #1E3C56;
-    position: fixed;
     position: fixed;
     width: 100%;
     border-bottom: solid 2px #1e3c56;
