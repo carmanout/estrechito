@@ -1,34 +1,99 @@
-section{
-    /* background: rgb(187 187 187 / 38%); */
+/* paleta de colores
+
+principal oscuro: #03647a
+principal claro: #5a9a9a
+contraste claro 1: #f7e3c0
+contraste menos claro: #beaa7d
+blanco: #fff
+negro y contraste oscuro: #161f31
+
+*/
+
+
+/* General Styles */
+body {
+    background-image: url("img/video.gif");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+section {
     padding: 25px;
     border-radius: 5px;
-    /* border: solid 2px #1E3C56; */
-    
+    margin-top: 15px !important;
+    border: solid 1px #161f31;
 }
+
+header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    background-color: #03647a;
+    color: #fff;
+    margin: 0px;
+    padding: 15px;
+    text-align: center;
+}
+
+footer>p {
+    margin: 0px;
+}
+
+/* Navbar Styles */
 .navbar {
-    background-color: #1E3C56;
+    background-color: #5a9a9a !important;
     position: fixed;
     width: 100%;
     top: 0px;
-    border-bottom: solid 2px #1e3c56;
+    border-bottom: solid 2px #161f31;
     z-index: 20;
+    transition: background-color 0.3s ease;
 }
 
-.navbar-brand, .nav-link {
+.navbar-brand,
+.nav-link {
     color: #FFFFFF !important;
 }
 
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-brand {
+    color: #161f31 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #FFFFFF !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #161f31 !important;
+}
+
+.navbar-brand img {
+    max-height: 50px;
+    transition: max-height 0.3s ease;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Jumbotron Styles */
 .jumbotron {
-    /* background-image: url("img/video.gif"); */
-    /* background-image: url("img/2025/02/cartel.png"); */
     text-shadow: 2px 2px 1px black;
-    /* background-attachment: fixed; */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
     margin-top: 115px;
-    color: #FFFFFF;
-    /* border: 2px solid #1E3C56; */
+    color: #fff;
     font-weight: 500;
     margin-bottom: 0px !important;
     display: flex;
@@ -38,83 +103,74 @@ section{
     background-color: rgba(0, 0, 0, 0);
 }
 
+/* Button Styles */
 .btn-primary {
-    background-color: #1E3C56;
-    border-color: #1E3C56;
+    background-color: #03647a;
+    border-color: #03647a;
 }
 
+/* Card Styles */
 .card {
-    background: linear-gradient(90deg, #293246, #3b7294);
-    color: white;
+    background: linear-gradient(120deg, #fff, #f7e3c0);
+    color: #fff;
     margin-bottom: 15px;
     height: 350px;
+    position: relative;
+    overflow: hidden;
 }
 
-
-
 .card-title {
-    color: rgb(189, 225, 255);
+    color: #f7e3c0;
     font-weight: 500;
 }
 
-footer {
-    background-color: #1E3C56;
-    color: #FFFFFF;
-    margin: 0px;
-    padding: 15px;
-    text-align: center;
-}
-footer>p{
-    margin: 0px;
-}
-
-.bg-light {
-    background-color: #FFFFFF !important;
-    color: #2B2B2B !important;
+.card-body {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-.navbar-light .navbar-nav .nav-link {
-    color: #2B2B2B !important;
+/* Image Container Styles */
+.img-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
-.navbar-light .navbar-brand {
-    color: #2B2B2B !important;
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
-header {
-    /* background-image: url("https://www.shutterstock.com/image-photo/blue-party-glowing-light-black-260nw-1916852150.jpg"); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
-
-h1, h2, h3, h4, h5, h6, .navbar-brand, .nav-link {
-    font-family: "Montserrat", serif !important;
-}
-
+/* Presentation Styles */
 .presentacion {
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
     padding: 15px;
-    background: linear-gradient(180deg, #ffffff, #80c2eb);
+    background: linear-gradient(120deg, #fff, #f7e3c0);
 }
 
-
+/* Scrolling Wrapper Styles */
 .scrolling-wrapper {
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 .scrolling-wrapper::-webkit-scrollbar {
-    display: none; /* Safari and Chrome */
+    display: none;
 }
 
 .scrolling-wrapper .col-12 {
@@ -130,103 +186,55 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .nav-link {
     cursor: grabbing;
 }
 
+/* Section Specific Styles */
+#acerca-de-contacto {
+    background-color: #161f31;
+    color: #fff;
+    margin-bottom: 0px !important;
+    margin-top: 50px !important;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
 #acerca-de-contacto .col-12 {
     margin-bottom: 15px;
 }
 
-
-#marketing{
-    background: linear-gradient(180deg, #80c2eb, #fff);
+#marketing {
+    background: linear-gradient(120deg, #fff, #f7e3c0);
 }
 
-#carta{
-    background: linear-gradient(180deg, #ffffff, #80c2eb);
+#carta {
+    background: linear-gradient(120deg, #fff, #f7e3c0);
     margin-bottom: 0px !important;
 }
 
-#acerca-de-contacto{
-    background-color: rgb(37, 37, 37);
-    color: white;
-    margin-bottom: 0px !important;
-    margin-TOP: 0px !important;
-    border-bottom-right-radius: 0px ;
-    border-bottom-left-radius: 0px ;
-}
-
-@media (min-width: 768px) {
-    #acerca-de-contacto .col-12 {
-        margin-bottom: 0;
-    }
-    body {
-        background-image: url("img/video.gif");
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover;
-    }
-
-    section{
-        margin-top: 15px !important;
-        border: solid 1px black;  
-    }
-
-    #acerca-de-contacto{
-        margin-TOP: 50px !important;
-    }
-
-    #acercade{
-        border: none;
-    }
-}
-
-#logo{
+#logo {
+    margin-bottom: 0px;
+    border-radius: 15px;
+    max-width: 65vw;
     max-height: 100px;
-    margin-right: 20px;
-    transition: max-height 0.3s ease;
 }
 
-#logo.shrink {
-    max-height: 45px;
+#logo.shrink{
+    max-height: 35px;
 }
 
-.img-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+/* Typography */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand,
+.nav-link {
+    font-family: "Montserrat", serif !important;
 }
 
-.img-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin deformarse */
-    object-position: center; /* Centra la imagen dentro del contenedor */
-}
-
-.card {
-    position: relative; /* Asegura que los elementos hijos posicionados absolutamente se ubiquen dentro de .card */
-    overflow: hidden; /* Oculta cualquier contenido que sobresalga del contenedor */
-}
-
-.img-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.img-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin deformarse */
-    object-position: center; /* Centra la imagen dentro del contenedor */
-}
-
-.card-body {
-    position: absolute; /* Posiciona .card-body de manera absoluta dentro de .card */
-    bottom: 0; /* Alinea .card-body al fondo de .card */
-    width: 100%; /* Asegura que .card-body ocupe todo el ancho de .card */
-    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar la legibilidad del texto */
-    color: white; /* Color del texto */
-    padding: 10px; /* Espaciado interno */
-    box-sizing: border-box; /* Incluye el padding en el tamaño total del elemento */
+.bg-light {
+    background-color: #fff !important;
+    color: #161f31 !important;
 }
