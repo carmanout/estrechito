@@ -238,3 +238,17 @@ h6,
     background-color: #fff !important;
     color: #161f31 !important;
 }
+
+.altancha {
+    position: relative;
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    height: auto; /* Permite que el contenedor se ajuste al alto de la imagen */
+    overflow: hidden; /* Oculta cualquier contenido que sobresalga */
+    text-align: center; /* Centra la imagen horizontalmente */
+}
+
+.altancha img {
+    width: 100%; /* Extiende la imagen a lo ancho del contenedor */
+    height: auto; /* Mantiene las proporciones originales de la imagen */
+    object-fit: contain; /* Ajusta la imagen dentro del contenedor sin recortarla ni deformarla */
+}
