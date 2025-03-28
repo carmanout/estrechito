@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /scripts/
+Disallow: /private/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /404.html
+
+Allow: /
+
+Sitemap: https://elestrechito.com/sitemap.xml
