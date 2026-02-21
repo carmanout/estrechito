@@ -1,0 +1,254 @@
+/* paleta de colores
+
+principal oscuro: #03647a
+principal claro: #5a9a9a
+contraste claro 1: #f7e3c0
+contraste menos claro: #beaa7d
+blanco: #fff
+negro y contraste oscuro: #161f31
+
+*/
+
+
+/* General Styles */
+body {
+    background-image: url("img/video.gif");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+section {
+    padding: 25px;
+    border-radius: 5px;
+    margin-top: 15px !important;
+    border: solid 1px #161f31;
+}
+
+header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    background-color: #03647a;
+    color: #fff;
+    margin: 0px;
+    padding: 15px;
+    text-align: center;
+}
+
+footer>p {
+    margin: 0px;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #5a9a9a !important;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    border-bottom: solid 2px #161f31;
+    z-index: 20;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-brand,
+.nav-link {
+    color: #FFFFFF !important;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-brand {
+    color: #161f31 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #FFFFFF !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #161f31 !important;
+}
+
+.navbar-brand img {
+    max-height: 50px;
+    transition: max-height 0.3s ease;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Jumbotron Styles */
+.jumbotron {
+    text-shadow: 2px 2px 1px black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    margin-top: 115px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 0px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #03647a;
+    border-color: #03647a;
+}
+
+/* Card Styles */
+.card {
+    background: linear-gradient(120deg, #fff, #f7e3c0);
+    color: #fff;
+    margin-bottom: 15px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-title {
+    color: #f7e3c0;
+    font-weight: 500;
+}
+
+.card-body {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Image Container Styles */
+.img-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Presentation Styles */
+.presentacion {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(120deg, #fff, #f7e3c0);
+}
+
+/* Scrolling Wrapper Styles */
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.scrolling-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.scrolling-wrapper .col-12 {
+    display: inline-block;
+    float: none;
+}
+
+.scrolling-wrapper .card {
+    cursor: grab;
+}
+
+.scrolling-wrapper .card:active {
+    cursor: grabbing;
+}
+
+/* Section Specific Styles */
+#acerca-de-contacto {
+    background-color: #161f31;
+    color: #fff;
+    margin-bottom: 0px !important;
+    margin-top: 50px !important;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+#acerca-de-contacto .col-12 {
+    margin-bottom: 15px;
+}
+
+#marketing {
+    background: linear-gradient(120deg, #fff, #f7e3c0);
+}
+
+#carta {
+    background: linear-gradient(120deg, #fff, #f7e3c0);
+    margin-bottom: 0px !important;
+}
+
+#logo {
+    margin-bottom: 0px;
+    border-radius: 15px;
+    max-width: 65vw;
+    max-height: 100px;
+}
+
+#logo.shrink{
+    max-height: 35px;
+}
+
+/* Typography */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand,
+.nav-link {
+    font-family: "Montserrat", serif !important;
+}
+
+.bg-light {
+    background-color: #fff !important;
+    color: #161f31 !important;
+}
+
+.altancha {
+    position: relative;
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    height: auto; /* Permite que el contenedor se ajuste al alto de la imagen */
+    overflow: hidden; /* Oculta cualquier contenido que sobresalga */
+    text-align: center; /* Centra la imagen horizontalmente */
+}
+
+.altancha img {
+    width: 100%; /* Extiende la imagen a lo ancho del contenedor */
+    height: auto; /* Mantiene las proporciones originales de la imagen */
+    object-fit: contain; /* Ajusta la imagen dentro del contenedor sin recortarla ni deformarla */
+}
